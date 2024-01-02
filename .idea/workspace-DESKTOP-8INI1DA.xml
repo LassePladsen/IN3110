@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3ef9afac-b3c7-42f3-8fdf-9b53caa9219f" name="Changes" comment="refactor" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/IN3110-lassepl" />
+    <option name="RESET_MODE" value="MIXED" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2UTLMlGfdGrgymQvTC8xpzI23tT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Lasse/OneDrive/Bachelor FA 2021-24/5. semester H23/IN3110/Weekly exercises/6&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Lasse\OneDrive\Bachelor FA 2021-24\5. semester H23\IN3110\Weekly exercises\6" />
+      <recent name="E:\Lasse\OneDrive\Bachelor FA 2021-24\5. semester H23\IN3110\IN3110-lassepl\assignment3\testing" />
+      <recent name="E:\Lasse\OneDrive\Bachelor FA 2021-24\5. semester H23\IN3110\IN3110-lassepl\assignment3\test" />
+      <recent name="E:\Lasse\OneDrive\Bachelor FA 2021-24\5. semester H23\IN3110\Weekly exercises\4" />
+      <recent name="C:\Users\Lasse\OneDrive\Bachelor FA 2021-24\5. semester H23\IN3110\Weekly exercises\2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Lasse\OneDrive\Bachelor FA 2021-24\5. semester H23\IN3110\testing\assignment 3" />
+      <recent name="E:\Lasse\OneDrive\Bachelor FA 2021-24\5. semester H23\IN3110" />
+      <recent name="E:\Lasse\OneDrive\Bachelor FA 2021-24\5. semester H23\IN3110\Weekly exercises\4" />
+      <recent name="C:\Users\Lasse\OneDrive\Bachelor FA 2021-24\5. semester H23\IN3110\IN3110-lassepl\assignment2" />
+      <recent name="C:\Users\Lasse\OneDrive\Bachelor FA 2021-24\5. semester H23\IN3110\IN3110-lassepl" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="pip install in3110" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests in test_python.py">
+    <configuration name="diff_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IN3110" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Weekly exercises/6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Weekly exercises/6/diff_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="diff_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IN3110" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Weekly exercises/6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\Lasse\OneDrive\Bachelor FA 2021-24\5. semester H23\IN3110\Weekly exercises\6\diff_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="superdiff" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IN3110" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Weekly exercises/6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Weekly exercises/6/superdiff.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_numba" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IN3110" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/IN3110-lassepl/assignment3/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IN3110-lassepl/assignment3/test/test_numba.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_python.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="IN3110" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/IN3110-lassepl/assignment3/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/IN3110-lassepl/assignment3/test/test_python.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in test_python.py" />
+        <item itemvalue="Python.test_numba" />
+        <item itemvalue="Python.superdiff" />
+        <item itemvalue="Python.diff_test (1)" />
+        <item itemvalue="Python.diff_test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ef9afac-b3c7-42f3-8fdf-9b53caa9219f" name="Changes" comment="" />
+      <created>1692958578121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692958578121</updated>
+      <workItem from="1693830377527" duration="34000" />
+      <workItem from="1693831493896" duration="30000" />
+      <workItem from="1693831571990" duration="28000" />
+      <workItem from="1694172376809" duration="2041000" />
+      <workItem from="1694594568639" duration="8000" />
+      <workItem from="1694702615886" duration="3930000" />
+      <workItem from="1694776717678" duration="1651000" />
+      <workItem from="1694806156789" duration="5222000" />
+      <workItem from="1694858770297" duration="15899000" />
+      <workItem from="1694947751599" duration="3899000" />
+      <workItem from="1694951700962" duration="10285000" />
+      <workItem from="1695029943229" duration="11591000" />
+      <workItem from="1695041692125" duration="212000" />
+      <workItem from="1695215223183" duration="1085000" />
+      <workItem from="1695744073257" duration="1557000" />
+      <workItem from="1695808760802" duration="481000" />
+      <workItem from="1696162508618" duration="2374000" />
+      <workItem from="1696164923111" duration="150000" />
+      <workItem from="1696165084853" duration="3937000" />
+      <workItem from="1696245684158" duration="8168000" />
+      <workItem from="1696342202746" duration="575000" />
+    </task>
+    <task id="LOCAL−00048" summary="changed logic truncating transparency value in image array">
+      <option name="closed" value="true" />
+      <created>1694875823608</created>
+      <option name="number" value="LOCAL−00048" />
+      <option name="presentableId" value="LOCAL−00048" />
+      <updated>1694875823608</updated>
+    </task>
+    <task id="LOCAL−00049" summary="updated comment">
+      <option name="closed" value="true" />
+      <created>1694948139008</created>
+      <option name="number" value="LOCAL−00049" />
+      <option name="presentableId" value="LOCAL−00049" />
+      <updated>1694948139008</updated>
+    </task>
+    <task id="LOCAL−00050" summary="updated comment">
+      <option name="closed" value="true" />
+      <created>1694948697479</created>
+      <option name="number" value="LOCAL−00050" />
+      <option name="presentableId" value="LOCAL−00050" />
+      <updated>1694948697479</updated>
+    </task>
+    <task id="LOCAL−00051" summary="implemented numpy_color2sepia (task 7.2)">
+      <option name="closed" value="true" />
+      <created>1694949051801</created>
+      <option name="number" value="LOCAL−00051" />
+      <option name="presentableId" value="LOCAL−00051" />
+      <updated>1694949051801</updated>
+    </task>
+    <task id="LOCAL−00052" summary="fixed implementation for brightness bug in python_color2sepia (task 7.1)">
+      <option name="closed" value="true" />
+      <created>1694950968953</created>
+      <option name="number" value="LOCAL−00052" />
+      <option name="presentableId" value="LOCAL−00052" />
+      <updated>1694950968954</updated>
+    </task>
+    <task id="LOCAL−00053" summary="changed scaling logic">
+      <option name="closed" value="true" />
+      <created>1694950987485</created>
+      <option name="number" value="LOCAL−00053" />
+      <option name="presentableId" value="LOCAL−00053" />
+      <updated>1694950987485</updated>
+    </task>
+    <task id="LOCAL−00054" summary="implemented numba_color2sepia (task 7.3) not sure if its done right as it is slower than numpy">
+      <option name="closed" value="true" />
+      <created>1694951660813</created>
+      <option name="number" value="LOCAL−00054" />
+      <option name="presentableId" value="LOCAL−00054" />
+      <updated>1694951660813</updated>
+    </task>
+    <task id="LOCAL−00055" summary="fixed fourth (transparency) channel code">
+      <option name="closed" value="true" />
+      <created>1694954460485</created>
+      <option name="number" value="LOCAL−00055" />
+      <option name="presentableId" value="LOCAL−00055" />
+      <updated>1694954460486</updated>
+    </task>
+    <task id="LOCAL−00056" summary="fixed fourth (transparency) channel code">
+      <option name="closed" value="true" />
+      <created>1694954486462</created>
+      <option name="number" value="LOCAL−00056" />
+      <option name="presentableId" value="LOCAL−00056" />
+      <updated>1694954486462</updated>
+    </task>
+    <task id="LOCAL−00057" summary="fixed fourth (transparency) channel code">
+      <option name="closed" value="true" />
+      <created>1694954499900</created>
+      <option name="number" value="LOCAL−00057" />
+      <option name="presentableId" value="LOCAL−00057" />
+      <updated>1694954499900</updated>
+    </task>
+    <task id="LOCAL−00058" summary="implemented test_color2gray (task 8)">
+      <option name="closed" value="true" />
+      <created>1694955174370</created>
+      <option name="number" value="LOCAL−00058" />
+      <option name="presentableId" value="LOCAL−00058" />
+      <updated>1694955174370</updated>
+    </task>
+    <task id="LOCAL−00059" summary="finished task 6 timing repors with make_reports()">
+      <option name="closed" value="true" />
+      <created>1694961491462</created>
+      <option name="number" value="LOCAL−00059" />
+      <option name="presentableId" value="LOCAL−00059" />
+      <updated>1694961491462</updated>
+    </task>
+    <task id="LOCAL−00060" summary="implemented test_color2sepia (task 8 python_color2sepia). However 25% relative error feels to big?">
+      <option name="closed" value="true" />
+      <created>1694961839475</created>
+      <option name="number" value="LOCAL−00060" />
+      <option name="presentableId" value="LOCAL−00060" />
+      <updated>1694961839475</updated>
+    </task>
+    <task id="LOCAL−00061" summary="added more pixel testes">
+      <option name="closed" value="true" />
+      <created>1695030323467</created>
+      <option name="number" value="LOCAL−00061" />
+      <option name="presentableId" value="LOCAL−00061" />
+      <updated>1695030323467</updated>
+    </task>
+    <task id="LOCAL−00062" summary="renamed pixel variable">
+      <option name="closed" value="true" />
+      <created>1695030348403</created>
+      <option name="number" value="LOCAL−00062" />
+      <option name="presentableId" value="LOCAL−00062" />
+      <updated>1695030348403</updated>
+    </task>
+    <task id="LOCAL−00063" summary="added asserting test_color2gray right values too.&#10;Changed tolerance to 35% in test_color2sepia">
+      <option name="closed" value="true" />
+      <created>1695030670176</created>
+      <option name="number" value="LOCAL−00063" />
+      <option name="presentableId" value="LOCAL−00063" />
+      <updated>1695030670176</updated>
+    </task>
+    <task id="LOCAL−00064" summary="changed np.dot() order">
+      <option name="closed" value="true" />
+      <created>1695030760533</created>
+      <option name="number" value="LOCAL−00064" />
+      <option name="presentableId" value="LOCAL−00064" />
+      <updated>1695030760533</updated>
+    </task>
+    <task id="LOCAL−00065" summary="numpy_color2gray gave output array as wrong shape. duplicated the gray-value to the three channels">
+      <option name="closed" value="true" />
+      <created>1695031330834</created>
+      <option name="number" value="LOCAL−00065" />
+      <option name="presentableId" value="LOCAL−00065" />
+      <updated>1695031330834</updated>
+    </task>
+    <task id="LOCAL−00066" summary="implemented test_color2gray (task 8 numpy_color2gray)">
+      <option name="closed" value="true" />
+      <created>1695031366393</created>
+      <option name="number" value="LOCAL−00066" />
+      <option name="presentableId" value="LOCAL−00066" />
+      <updated>1695031366393</updated>
+    </task>
+    <task id="LOCAL−00067" summary="fixed test_color2sepia, it used the wrong filter. reduced tolerance to 15%">
+      <option name="closed" value="true" />
+      <created>1695031505981</created>
+      <option name="number" value="LOCAL−00067" />
+      <option name="presentableId" value="LOCAL−00067" />
+      <updated>1695031505981</updated>
+    </task>
+    <task id="LOCAL−00068" summary="refactor, changed order for np.testing.assert_allclose in test_color2sepia">
+      <option name="closed" value="true" />
+      <created>1695031849229</created>
+      <option name="number" value="LOCAL−00068" />
+      <option name="presentableId" value="LOCAL−00068" />
+      <updated>1695031849229</updated>
+    </task>
+    <task id="LOCAL−00069" summary="added whitespace">
+      <option name="closed" value="true" />
+      <created>1695032106259</created>
+      <option name="number" value="LOCAL−00069" />
+      <option name="presentableId" value="LOCAL−00069" />
+      <updated>1695032106259</updated>
+    </task>
+    <task id="LOCAL−00070" summary="implemented test_color2sepia (task 8 numpy_color2sepia)">
+      <option name="closed" value="true" />
+      <created>1695032479380</created>
+      <option name="number" value="LOCAL−00070" />
+      <option name="presentableId" value="LOCAL−00070" />
+      <updated>1695032479380</updated>
+    </task>
+    <task id="LOCAL−00071" summary="added script calling cli:main() (task 11)">
+      <option name="closed" value="true" />
+      <created>1695032844266</created>
+      <option name="number" value="LOCAL−00071" />
+      <option name="presentableId" value="LOCAL−00071" />
+      <updated>1695032844267</updated>
+    </task>
+    <task id="LOCAL−00072" summary="implemented cli:main() (task 11)">
+      <option name="closed" value="true" />
+      <created>1695035651608</created>
+      <option name="number" value="LOCAL−00072" />
+      <option name="presentableId" value="LOCAL−00072" />
+      <updated>1695035651608</updated>
+    </task>
+    <task id="LOCAL−00073" summary="added new lines for arguments, for easier reading">
+      <option name="closed" value="true" />
+      <created>1695035730452</created>
+      <option name="number" value="LOCAL−00073" />
+      <option name="presentableId" value="LOCAL−00073" />
+      <updated>1695035730452</updated>
+    </task>
+    <task id="LOCAL−00074" summary="added comment">
+      <option name="closed" value="true" />
+      <created>1695035781237</created>
+      <option name="number" value="LOCAL−00074" />
+      <option name="presentableId" value="LOCAL−00074" />
+      <updated>1695035781237</updated>
+    </task>
+    <task id="LOCAL−00075" summary="1) fixed oversight in main()&#10;2) started implementing run_filter()">
+      <option name="closed" value="true" />
+      <created>1695036159990</created>
+      <option name="number" value="LOCAL−00075" />
+      <option name="presentableId" value="LOCAL−00075" />
+      <updated>1695036159990</updated>
+    </task>
+    <task id="LOCAL−00076" summary="1) added explanation to -o argument in main()&#10;2) progress on run_filter()">
+      <option name="closed" value="true" />
+      <created>1695036557114</created>
+      <option name="number" value="LOCAL−00076" />
+      <option name="presentableId" value="LOCAL−00076" />
+      <updated>1695036557114</updated>
+    </task>
+    <task id="LOCAL−00077" summary="1) added check for non-negative numbers in main()&#10;2) finished implementation of run_filter (task 11)">
+      <option name="closed" value="true" />
+      <created>1695038058962</created>
+      <option name="number" value="LOCAL−00077" />
+      <option name="presentableId" value="LOCAL−00077" />
+      <updated>1695038058962</updated>
+    </task>
+    <task id="LOCAL−00078" summary="fixed png error with 4 channels">
+      <option name="closed" value="true" />
+      <created>1695039358557</created>
+      <option name="number" value="LOCAL−00078" />
+      <option name="presentableId" value="LOCAL−00078" />
+      <updated>1695039358557</updated>
+    </task>
+    <task id="LOCAL−00079" summary="fixed png error with 4 channels in both funcs">
+      <option name="closed" value="true" />
+      <created>1695039423414</created>
+      <option name="number" value="LOCAL−00079" />
+      <option name="presentableId" value="LOCAL−00079" />
+      <updated>1695039423414</updated>
+    </task>
+    <task id="LOCAL−00080" summary="completed the readme.md and loaded into pyproject.toml (task 12)">
+      <option name="closed" value="true" />
+      <created>1695041082605</created>
+      <option name="number" value="LOCAL−00080" />
+      <option name="presentableId" value="LOCAL−00080" />
+      <updated>1695041082605</updated>
+    </task>
+    <task id="LOCAL−00081" summary="updated readme pip install guide">
+      <option name="closed" value="true" />
+      <created>1695041280539</created>
+      <option name="number" value="LOCAL−00081" />
+      <option name="presentableId" value="LOCAL−00081" />
+      <updated>1695041280539</updated>
+    </task>
+    <task id="LOCAL−00082" summary="updated readme">
+      <option name="closed" value="true" />
+      <created>1695041495146</created>
+      <option name="number" value="LOCAL−00082" />
+      <option name="presentableId" value="LOCAL−00082" />
+      <updated>1695041495146</updated>
+    </task>
+    <task id="LOCAL−00083" summary="updated error message for invalid k">
+      <option name="closed" value="true" />
+      <created>1695041520996</created>
+      <option name="number" value="LOCAL−00083" />
+      <option name="presentableId" value="LOCAL−00083" />
+      <updated>1695041520996</updated>
+    </task>
+    <task id="LOCAL−00084" summary="updated timing reports to include color2sepia filters">
+      <option name="closed" value="true" />
+      <created>1695041848957</created>
+      <option name="number" value="LOCAL−00084" />
+      <option name="presentableId" value="LOCAL−00084" />
+      <updated>1695041848957</updated>
+    </task>
+    <task id="LOCAL−00085" summary="implemented --runtime flag (task 14)">
+      <option name="closed" value="true" />
+      <created>1695216094665</created>
+      <option name="number" value="LOCAL−00085" />
+      <option name="presentableId" value="LOCAL−00085" />
+      <updated>1695216094665</updated>
+    </task>
+    <task id="LOCAL−00086" summary="changed timing logic to timeit.timeit(). Also calls the function once before measurements to let numba jit compile the code once">
+      <option name="closed" value="true" />
+      <created>1695745528313</created>
+      <option name="number" value="LOCAL−00086" />
+      <option name="presentableId" value="LOCAL−00086" />
+      <updated>1695745528313</updated>
+    </task>
+    <task id="LOCAL−00087" summary="re-ran timing report">
+      <option name="closed" value="true" />
+      <created>1695809098307</created>
+      <option name="number" value="LOCAL−00087" />
+      <option name="presentableId" value="LOCAL−00087" />
+      <updated>1695809098308</updated>
+    </task>
+    <task id="LOCAL−00088" summary="test">
+      <option name="closed" value="true" />
+      <created>1696163324705</created>
+      <option name="number" value="LOCAL−00088" />
+      <option name="presentableId" value="LOCAL−00088" />
+      <updated>1696163324705</updated>
+    </task>
+    <task id="LOCAL−00089" summary="test">
+      <option name="closed" value="true" />
+      <created>1696163375264</created>
+      <option name="number" value="LOCAL−00089" />
+      <option name="presentableId" value="LOCAL−00089" />
+      <updated>1696163375264</updated>
+    </task>
+    <task id="LOCAL−00090" summary="test">
+      <option name="closed" value="true" />
+      <created>1696163388740</created>
+      <option name="number" value="LOCAL−00090" />
+      <option name="presentableId" value="LOCAL−00090" />
+      <updated>1696163388740</updated>
+    </task>
+    <task id="LOCAL−00091" summary="test">
+      <option name="closed" value="true" />
+      <created>1696163481080</created>
+      <option name="number" value="LOCAL−00091" />
+      <option name="presentableId" value="LOCAL−00091" />
+      <updated>1696163481080</updated>
+    </task>
+    <task id="LOCAL−00092" summary="done with week 4">
+      <option name="closed" value="true" />
+      <created>1696166886288</created>
+      <option name="number" value="LOCAL−00092" />
+      <option name="presentableId" value="LOCAL−00092" />
+      <updated>1696166886288</updated>
+    </task>
+    <task id="LOCAL−00093" summary="finished with week5, confused about itertools">
+      <option name="closed" value="true" />
+      <created>1696169036131</created>
+      <option name="number" value="LOCAL−00093" />
+      <option name="presentableId" value="LOCAL−00093" />
+      <updated>1696169036131</updated>
+    </task>
+    <task id="LOCAL−00094" summary="work on week 6, shits hard af">
+      <option name="closed" value="true" />
+      <created>1696253452096</created>
+      <option name="number" value="LOCAL−00094" />
+      <option name="presentableId" value="LOCAL−00094" />
+      <updated>1696253452096</updated>
+    </task>
+    <task id="LOCAL−00095" summary="implemented both testing funcs. need to test them">
+      <option name="closed" value="true" />
+      <created>1696342735476</created>
+      <option name="number" value="LOCAL−00095" />
+      <option name="presentableId" value="LOCAL−00095" />
+      <updated>1696342735477</updated>
+    </task>
+    <task id="LOCAL−00096" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1696342774313</created>
+      <option name="number" value="LOCAL−00096" />
+      <option name="presentableId" value="LOCAL−00096" />
+      <updated>1696342774313</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/Weekly exercises" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added whitespace" />
+    <MESSAGE value="implemented test_color2sepia (task 8 numpy_color2sepia)" />
+    <MESSAGE value="added script calling cli:main() (task 11)" />
+    <MESSAGE value="implemented cli:main() (task 11)" />
+    <MESSAGE value="added new lines for arguments, for easier reading" />
+    <MESSAGE value="added comment" />
+    <MESSAGE value="1) fixed oversight in main()&#10;2) started implementing run_filter()" />
+    <MESSAGE value="1) added explanation to -o argument in main()&#10;2) progress on run_filter()" />
+    <MESSAGE value="1) added check for non-negative numbers in main()&#10;2) finished implementation of run_filter (task 11)" />
+    <MESSAGE value="fixed png error with 4 channels" />
+    <MESSAGE value="fixed png error with 4 channels in both funcs" />
+    <MESSAGE value="completed the readme.md and loaded into pyproject.toml (task 12)" />
+    <MESSAGE value="updated readme pip install guide" />
+    <MESSAGE value="updated readme" />
+    <MESSAGE value="updated error message for invalid k" />
+    <MESSAGE value="updated timing reports to include color2sepia filters" />
+    <MESSAGE value="implemented --runtime flag (task 14)" />
+    <MESSAGE value="changed timing logic to timeit.timeit(). Also calls the function once before measurements to let numba jit compile the code once" />
+    <MESSAGE value="re-ran timing report" />
+    <MESSAGE value="test" />
+    <MESSAGE value="done with week 4" />
+    <MESSAGE value="finished with week5, confused about itertools" />
+    <MESSAGE value="work on week 6, shits hard af" />
+    <MESSAGE value="implemented both testing funcs. need to test them" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IN3110$superdiff.coverage" NAME="superdiff Coverage Results" MODIFIED="1696253357735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/6" />
+    <SUITE FILE_PATH="coverage/IN3110$lookatfile.coverage" NAME="lookatfile Coverage Results" MODIFIED="1694172922224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/2" />
+    <SUITE FILE_PATH="coverage/IN3110$ex2.coverage" NAME="ex2 Coverage Results" MODIFIED="1696169000454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/5" />
+    <SUITE FILE_PATH="coverage/IN3110$diff_test__1_.coverage" NAME="diff_test (1) Coverage Results" MODIFIED="1696249068075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/6" />
+    <SUITE FILE_PATH="coverage/IN3110$numba_filters.coverage" NAME="numba_filters Coverage Results" MODIFIED="1694951530147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IN3110-lassepl/assignment3/in3110_instapy" />
+    <SUITE FILE_PATH="coverage/IN3110$ex1.coverage" NAME="ex1 Coverage Results" MODIFIED="1696167952762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/5" />
+    <SUITE FILE_PATH="coverage/IN3110$timing.coverage" NAME="timing Coverage Results" MODIFIED="1695744690520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IN3110-lassepl/assignment3/in3110_instapy" />
+    <SUITE FILE_PATH="coverage/IN3110$re_test.coverage" NAME="re_test Coverage Results" MODIFIED="1696246865469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/6" />
+    <SUITE FILE_PATH="coverage/IN3110$testing.coverage" NAME="testing Coverage Results" MODIFIED="1695031300753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing/assignment 3" />
+    <SUITE FILE_PATH="coverage/IN3110$decorator_cache_output.coverage" NAME="decorator_cache_output Coverage Results" MODIFIED="1696166330201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/4" />
+    <SUITE FILE_PATH="coverage/IN3110$decorators__1_.coverage" NAME="decorators (1) Coverage Results" MODIFIED="1696166565529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/4" />
+    <SUITE FILE_PATH="coverage/IN3110$readme_script_test.coverage" NAME="readme_script_test Coverage Results" MODIFIED="1695040811847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing/assignment 3" />
+    <SUITE FILE_PATH="coverage/IN3110$decorator_time_function.coverage" NAME="decorator_time_function Coverage Results" MODIFIED="1696164748439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/4" />
+    <SUITE FILE_PATH="coverage/IN3110$testing__1_.coverage" NAME="testing (1) Coverage Results" MODIFIED="1694957193050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing/assignment 3" />
+    <SUITE FILE_PATH="coverage/IN3110$.coverage" NAME=" Coverage Results" MODIFIED="1696342690800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IN3110-lassepl/assignment3/test" />
+    <SUITE FILE_PATH="coverage/IN3110$cli.coverage" NAME="cli Coverage Results" MODIFIED="1695034312787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IN3110-lassepl/assignment3/in3110_instapy" />
+    <SUITE FILE_PATH="coverage/IN3110$python_filters.coverage" NAME="python_filters Coverage Results" MODIFIED="1694950506883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IN3110-lassepl/assignment3/in3110_instapy" />
+    <SUITE FILE_PATH="coverage/IN3110$find.coverage" NAME="find Coverage Results" MODIFIED="1694778323538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/3" />
+    <SUITE FILE_PATH="coverage/IN3110$rpn.coverage" NAME="rpn Coverage Results" MODIFIED="1694705938421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/3" />
+    <SUITE FILE_PATH="coverage/IN3110$test_numba.coverage" NAME="test_numba Coverage Results" MODIFIED="1696342632588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IN3110-lassepl/assignment3/test" />
+    <SUITE FILE_PATH="coverage/IN3110$blur_image.coverage" NAME="blur_image Coverage Results" MODIFIED="1694863459780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Weekly exercises/4" />
+    <SUITE FILE_PATH="coverage/IN3110$numpy_filters.coverage" NAME="numpy_filters Coverage Results" MODIFIED="1695031076811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IN3110-lassepl/assignment3/in3110_instapy" />
+  </component>
+</project>

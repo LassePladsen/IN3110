@@ -1,0 +1,32 @@
+.. My strompris api documentation master file, created by
+   sphinx-quickstart on Mon Nov 13 10:00:46 2023.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Strompris api's documentation!
+============================================
+Fetches electricity prices in regions of Norway from the 
+`'Hva koster strømmen' <https://www.hvakosterstrommen.no/strompris-api>`_ api and 
+visualizes them in a web application with adjustable configuration.
+
+Create the webpage by running
+
+.. code-block:: shell
+
+   python3 app.py
+
+Uvicorn will then give you a link in the terminal which you can go to in your browser.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   api.rst
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

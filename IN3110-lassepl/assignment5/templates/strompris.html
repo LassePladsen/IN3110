@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<title>Strømpris</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .content {
+    margin-left: 20px;
+  }
+
+  .error {
+    color: red;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #69dadb;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #193498;
+    color: white;
+  }
+</style>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@5.6.0"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+
+<body>
+  <!-- Add Navigation Bar with links to docs (both FastAPI and your sphinx docs) 
+  -->
+  <div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="/activity">Activity</a>
+    <a href="/docs">FastAPI Docs</a>
+    <a href="/help">Help</a>
+  </div>
+  <div class="content">
+    <!-- Header -->
+    <h1>Electricity prices in Norway</h1>
+    <p>Loaded from the <a href="https://www.hvakosterstrommen.no/strompris-api">"Hva koster strømmen"</a> API</p>
+    <div id="vis"></div>
+    <!-- Create Form -->
+    <form action="javascript:refreshPlot()" id="price-form">
+      <br>
+      Locations:
+      <br>
+      {% for (code, loc_name) in location_codes.items() %}
+      <label>
+          <input type="checkbox" name="locations" id="{{ code }}" value="{{ code }}" checked="true">
+      </label>
+      <label for="{{ code }}">{{ loc_name }}</label>
+      <br>
+      {% endfor %}
+      <br>
+      <label for="days">Amount of days:</label>
+      <input type="number" name="days" id="days" value="7" size="4" , min="1">
+      (ensure the first day is on or after October 1, 2023)
+      <br>
+      <label for="end">End date:</label>
+      <input type="date" name="end" id="end" value={{today}} min="2023-10-01">
+      <input type="submit" value="Refresh">
+    </form>
+  </div>
+
+  <script type="text/javascript">
+    async function refreshPlot() {
+      // begin constructing URL to request the plot JSON
+      const plotUrl = new URL(
+        `${document.location.protocol}//${document.location.host}/plot_prices.json`,
+      );
+
+      // get inputs from the form
+
+
+      // get selected location checkboxes
+      for (checkbox of document.querySelectorAll("input[name=locations]")) {
+        if (checkbox.checked) {
+          plotUrl.searchParams.append("locations", checkbox.value);
+        }
+      }
+
+      var endInput = document.querySelector('input[name="end"]');
+      if (endInput) {
+        plotUrl.searchParams.append("end", endInput.value);
+      } else {
+        console.warn('No input with name="end"');
+      }
+
+      var daysInput = document.querySelector('input[name="days"]');
+      if (daysInput) {
+        plotUrl.searchParams.append("days", daysInput.value);
+      } else {
+        console.warn('No input with name="days"');
+      }
+
+      console.log(`requesting new chart from ${plotUrl.href}`);
+      var response = await fetch(plotUrl.href);
+      var spec = await response.json();
+
+      var embedOpt = { mode: "vega-lite" };
+
+      function showError(el, error) {
+        el.innerHTML =
+          '<div class="error" style="color:red;">' +
+          "<p>JavaScript Error: " +
+          error.message +
+          "</p>" +
+          "<p>This usually means there's a typo in your chart specification. " +
+          "See the javascript console for the full traceback.</p>" +
+          "</div>";
+        throw error;
+      }
+      const el = document.getElementById("vis");
+      vegaEmbed("#vis", spec, embedOpt).catch((error) =>
+        showError(el, error),
+      );
+    }
+    refreshPlot();
+  </script>
+</body>
+
+</html>

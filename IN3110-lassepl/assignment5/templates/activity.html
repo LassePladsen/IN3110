@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Activity</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .content {
+      margin: 20px;
+    }
+
+    .error {
+      color: red;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #69dadb;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #193498;
+      color: white;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@5.6.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+
+<body>
+  <!-- Add Navigation Bar with links to docs (both FastAPI and your sphinx docs) 
+  -->
+  <div class="topnav">
+    <a href="/">Home</a>
+    <a class="active" href="/activity">Activity</a>
+    <a href="/docs">FastAPI Docs</a>
+    <a href="/help">Help</a>
+  </div>
+  <div class="content">
+    <h1>When should you take a shower today?</h1>
+    <div id="vis"></div>
+    <!-- Create Form -->
+    <form action="javascript:refreshPlot()" id="price-form">
+      <br>
+      <label for="activity">Activity:</label>
+      <select id="activity" name="activity">
+        {% for activity in activities %}
+        <option value="{{ activity }}">{{ activity }}</option>
+        {% endfor %}
+      </select>
+      <br>
+      <label for="minutes">Number of minutes:</label>
+      <input type="number" name="minutes" id="minutes" value="10" size="4" min="1" , max="60">
+      <br>
+      <label for="location">Location</label>
+      <select name="location">
+        {% for (code, loc_name) in location_codes.items() %}
+        <option value="{{ code }}">{{ loc_name }}</option>
+        </label>
+        {% endfor %}
+      </select>
+      <br>
+      <input type="submit" value="Refresh">
+    </form>
+  </div>
+
+  <script type="text/javascript">
+    async function refreshPlot() {
+      // begin constructing URL to request the plot JSON
+      const plotUrl = new URL(
+        `${document.location.protocol}//${document.location.host}/plot_activity.json`,
+      );
+
+      // get inputs from the form
+
+      var activityInput = document.querySelector('select[name="activity"]');
+      if (activityInput) {
+        plotUrl.searchParams.append("activity", activityInput.value);
+      } else {
+        console.warn('No input with name="activity"');
+      }
+
+      var minutesInput = document.querySelector('input[name="minutes"]');
+      if (minutesInput) {
+        plotUrl.searchParams.append("minutes", minutesInput.value);
+      } else {
+        console.warn('No input with name="minutes"');
+      }
+
+      var locationInput = document.querySelector('select[name="location"]');
+      if (locationInput) {
+        plotUrl.searchParams.append("location", locationInput.value);
+      } else {
+        console.warn('No input with name="location"');
+      }
+
+
+      console.log(`requesting new chart from ${plotUrl.href}`);
+      var response = await fetch(plotUrl.href);
+      var spec = await response.json();
+
+      var embedOpt = { mode: "vega-lite" };
+
+      function showError(el, error) {
+        el.innerHTML =
+          '<div class="error" style="color:red;">' +
+          "<p>JavaScript Error: " +
+          error.message +
+          "</p>" +
+          "<p>This usually means there's a typo in your chart specification. " +
+          "See the javascript console for the full traceback.</p>" +
+          "</div>";
+        throw error;
+      }
+      const el = document.getElementById("vis");
+      vegaEmbed("#vis", spec, embedOpt).catch((error) =>
+        showError(el, error),
+      );
+    }
+    refreshPlot();
+  </script>
+</body>
+
+</html>

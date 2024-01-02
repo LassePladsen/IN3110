@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Klima &#8212; Klima  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to Klima’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-klima">
+<span id="klima"></span><h1>Klima<a class="headerlink" href="#module-klima" title="Link to this heading">¶</a></h1>
+<p>Extract and visualize monthly average global temperatures using
+<a class="reference external" href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series/globe/land_ocean/all/1/1880-2023">https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series/globe/land_ocean/all/1/1880-2023</a>
+and <a class="reference external" href="https://www.ncei.noaa.gov/access/monitoring/global-temperature-anomalies#mean">https://www.ncei.noaa.gov/access/monitoring/global-temperature-anomalies#mean</a></p>
+<p>Assignment 5 bonus task 5.7</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="klima.get_html">
+<span class="sig-prename descclassname"><span class="pre">klima.</span></span><span class="sig-name descname"><span class="pre">get_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#klima.get_html" title="Link to this definition">¶</a></dt>
+<dd><p>Get an HTML page and return its contents.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – The URL to retrieve.</p></li>
+<li><p><strong>params</strong> (<em>dict</em><em>, </em><em>optional</em>) – URL parameters to add.</p></li>
+<li><p><strong>output</strong> (<em>str</em><em>, </em><em>optional</em>) – (optional) path where output should be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The HTML of the page, as text.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>html (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="klima.scrape_mean_temperatures">
+<span class="sig-prename descclassname"><span class="pre">klima.</span></span><span class="sig-name descname"><span class="pre">scrape_mean_temperatures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'https://www.ncei.noaa.gov/monitoring-content/monitoring-references/faq/anomalies/text/mean.html'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'C'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#klima.scrape_mean_temperatures" title="Link to this definition">¶</a></dt>
+<dd><p>Scrapes monthly global mean temperature data from the table on
+‘<a class="reference external" href="https://www.ncei.noaa.gov/access/monitoring/global-temperature-anomalies#mean">https://www.ncei.noaa.gov/access/monitoring/global-temperature-anomalies#mean</a>’
+into a DataFrame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> – The url to scrape the data from. Defaults to “<a class="reference external" href="https://www.ncei.noaa.gov/monitoring-content/monitoring-references/faq/anomalies/text/mean.html">https://www.ncei.noaa.gov/monitoring-content/monitoring-references/faq/anomalies/text/mean.html</a>”</p></li>
+<li><p><strong>unit</strong> – The temperature unit, either Celsuis as ‘C’ or Fahrenheit as ‘F’</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame containing global mean temperature for land &amp; sea for each month,
+columns=(‘Month’, ‘Temperature’)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="klima.extract_anomaly_data">
+<span class="sig-prename descclassname"><span class="pre">klima.</span></span><span class="sig-name descname"><span class="pre">extract_anomaly_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'data.csv'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#klima.extract_anomaly_data" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts global temperature anomalies from a csv file into a DataFrame,
+data downloaded from ‘<a class="reference external" href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series/globe/land_ocean/all/1/1880-2023">https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series/globe/land_ocean/all/1/1880-2023</a>’
+so the csv format should be the same: the fourth row should have the column names
+“Year,Anomaly” then the rest of the rows are the data in that order. The “Year”
+column also contains the month index as the last two numbers, e.g. “202313”.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> – csv filename to extract data from. Defaults to “data.csv”.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame containing the data with the columns [“Year”, “Anomaly”, “Month”]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="klima.get_monthly_mean_temperatures">
+<span class="sig-prename descclassname"><span class="pre">klima.</span></span><span class="sig-name descname"><span class="pre">get_monthly_mean_temperatures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'C'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#klima.get_monthly_mean_temperatures" title="Link to this definition">¶</a></dt>
+<dd><p>Calculate global monthly mean temperatures for several years all loaded from
+<a class="reference external" href="https://www.ncei.noaa.gov">https://www.ncei.noaa.gov</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df1</strong> – DataFrame from extract_anomaly_data()</p></li>
+<li><p><strong>df2</strong> – DataFrame from scrape_mean_temperatures()</p></li>
+<li><p><strong>unit</strong> – Temperature unit, either “C” or “F”. Defaults to “C”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Combined DataFrame containing mean temperatures with columns
+(“Year”, “Temperature”, “Month”, “Highest year”, “Highest temperature”,
+“Lowest temperature”, “Lowest year”)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="klima.main">
+<span class="sig-prename descclassname"><span class="pre">klima.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#klima.main" title="Link to this definition">¶</a></dt>
+<dd><p>Allow running this module as a script for testing; plots the global mean
+temperatures for each month and year and shows it (requires
+altair viewer or vscode/jupyter notebook)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Klima</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Klima</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#klima.get_html"><code class="docutils literal notranslate"><span class="pre">get_html()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#klima.scrape_mean_temperatures"><code class="docutils literal notranslate"><span class="pre">scrape_mean_temperatures()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#klima.extract_anomaly_data"><code class="docutils literal notranslate"><span class="pre">extract_anomaly_data()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#klima.get_monthly_mean_temperatures"><code class="docutils literal notranslate"><span class="pre">get_monthly_mean_temperatures()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#klima.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Klima’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Lasse Pladsen.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

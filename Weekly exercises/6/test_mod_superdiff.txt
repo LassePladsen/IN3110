@@ -1,0 +1,13 @@
+- This is a test file
++ This is a modified test file
+0 which has
++ new paragraph
+0 
++ new line
+0 testing
++ [ 1, 2 | 45] to test mod
+0 
++ with 'test'
++ testing shit
+- multiple lines
+- [ 1, 2 | 3, 45] to test

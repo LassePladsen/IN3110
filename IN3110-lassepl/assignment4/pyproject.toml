@@ -1,0 +1,21 @@
+[build-system]
+requires = [
+    "setuptools>=61",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+version = "2023.10.1"
+name = "in3110_assignment4"
+dependencies = [
+    "beautifulsoup4",
+    "requests",
+    "matplotlib",
+    "pandas",
+    "numpy",
+    "pytest",
+    "tabulate",
+]
+
+[tool.setuptools]
+packages = []

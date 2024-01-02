@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+
+<title>Greetings</title>
+
+<h2>List of all greetings:</h2>
+
+
+{% for greeting in greetings %}
+    <a href="/greet/{{greeting}}">{{ greeting }}</a>
+{% endfor %}

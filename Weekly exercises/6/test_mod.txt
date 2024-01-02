@@ -1,0 +1,12 @@
+This is a modified test file
+which has
+new paragraph
+
+new line
+
+[ 1, 2 | 45] to test mod
+
+with 'test'
+testing shit
+
+testing
